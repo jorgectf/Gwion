@@ -101,7 +101,7 @@ ast/libgwion_ast.a: util/libgwion_util.a
 	@+ ${MAKE} -s -C ast
 
 libcmdapp/libcmdapp.a:
-	@+${MAKE} -s -C libcmdapp static
+	@+CFLAGS=-I$(shell pwd)/util/libtermcolor/include ${MAKE} -s -C libcmdapp static
 
 fmt/libgwion-fmt.a:
 	@+${MAKE} -s -C fmt libgwion-fmt.a
