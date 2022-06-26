@@ -23,7 +23,7 @@ test_dir += examples
 src := $(wildcard src/*.c)
 src += $(wildcard src/*/*.c)
 
-CFLAGS += -Iutil/include -Iast/include -Ilibcmdapp/src -D_GNU_SOURCE
+CFLAGS += -Iutil/include -Iutil/libtermcolor/include -Iast/include -Ilibcmdapp/src -D_GNU_SOURCE
 CFLAGS += -Iast/libprettyerr/src -Ifmt/include
 
 # add commit hash to version for now
